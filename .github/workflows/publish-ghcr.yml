@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - custom/ghcr-build
     tags:
       - "v*"
   workflow_dispatch:
