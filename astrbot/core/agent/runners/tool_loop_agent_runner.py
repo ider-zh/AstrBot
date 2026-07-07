@@ -142,9 +142,9 @@ class ToolLoopAgentRunner(BaseAgentRunner[TContext]):
         "Do not return an empty response. "
         "Do not ignore the selected tools without explanation."
     )
-    REPEATED_TOOL_NOTICE_L1_THRESHOLD = 3
-    REPEATED_TOOL_NOTICE_L2_THRESHOLD = 4
-    REPEATED_TOOL_NOTICE_L3_THRESHOLD = 5
+    REPEATED_TOOL_NOTICE_L1_THRESHOLD = 40
+    REPEATED_TOOL_NOTICE_L2_THRESHOLD = 80
+    REPEATED_TOOL_NOTICE_L3_THRESHOLD = 120
     MALFORMED_TOOL_NAME_PLACEHOLDER = "__malformed_tool_name__"
     REPEATED_TOOL_NOTICE_L1_TEMPLATE = (
         "\n\n[SYSTEM NOTICE] By the way, you have executed the same tool "
